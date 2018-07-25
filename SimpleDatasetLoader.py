@@ -2,6 +2,8 @@
 import numpy as np
 import cv2
 import os
+
+
 class SimpleDatasetLoader:
     def __init__(self, preprocessors=None):
         # store the image processors
@@ -11,7 +13,7 @@ class SimpleDatasetLoader:
             self.preprocessors=[]
 
     def load(self, imagePaths, verbose=-1):
-        # initialize the list of features and labels
+        # initialize the list of features and label
         data=[]
         labels=[]
         # loop over the input images

@@ -17,7 +17,6 @@ import argparse
 ap = argparse.ArgumentParser()
 ap.add_argument("-d", "--dataset", required=True, help="path to input dataset")
 args = vars(ap.parse_args())
-
 # grab the list of image paths
 print("[INFO] loading images...")
 imagePaths = list(paths.list_images(args["dataset"]))
